@@ -1,0 +1,92 @@
+
+$bp-large:75em;   //1200px 
+$bp-large-1:68.75em; //1100px 
+$bp-large-2:62.5em; //1000px
+$bp-medium:56.25em; //900px
+$bp-medium-1:50em; //800px
+$bp-medium-2:43.75em; //700px
+$bp-small:37.5em; //600px
+$bp-small-1:31.25em; //500px
+$bp-small-2:25em; //400px
+$bp-small-3:20em; //320px
+
+@import "mixins";
+@import "base";
+@import "layout";
+@import "components";
+
+
+
+
+
+
+
+
+:root {
+      --color-primary:#eb2f64;
+      --color-primary-light: #FF3366;
+      --color-primary-dark: #BA265D;
+      --color-grey-light-1: #faf9f9;
+      --color-grey-light-2: #f4f2f2;
+      --color-grey-light-3: #f0eeee;
+      --color-grey-light-4: #ccc;
+      --color-grey-dark-1: #333;
+      --color-grey-dark-2: #777;
+      --color-grey-dark-3: #999;
+
+      --line: 1px solid var(--color-grey-light-2);
+      --shadow-light: 0 2rem 5rem rgba(0,0,0,.06); 
+}
+
+
+
+* {
+padding: 0; 
+margin: 0;
+}
+
+
+*,
+*::before,
+*::after {
+      box-sizing: inherit;
+}
+
+html {
+      box-sizing: border-box;
+      font-size: 62.5%;
+      
+
+           @include respond(bp-large-2){
+            font-size: 56.25% !important;  
+           }
+           @include respond(bp-medium-1){
+            font-size: 50% !important;  
+           } 
+           @include respond(bp-medium-2){
+            font-size: 56.25% !important;   } 
+           
+            @include respond(bp-small){
+                  font-size: 50% !important;   } 
+
+                  @include respond(bp-small-2){
+                        font-size: 43.75% !important;   } 
+}
+
+  
+body {
+      font-family: 'Open Sasn', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));;
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: var(--color-grey-dark-2);
+     
+     
+      
+      
+}
+
+
