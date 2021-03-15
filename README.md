@@ -1,0 +1,1 @@
+This page was built using flex-box. There are lots of intrsting features. 3 custom features that was crated by me :first is the falling menue when you hover "evgen". Pop-up window if you click at icon of messages. and if you start typing something in search field you will wacth simple annimation. This page is totally responsive ( you can see how @media was built in the code)
